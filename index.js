@@ -52,7 +52,7 @@ function removeFromCart(item) {
     }
   }
   if (searchResult) {
-    cart.splice(i, i);
+    cart.splice(cart.indexOf(search), i);
       return cart;
   }
 }
