@@ -51,10 +51,10 @@ function removeFromCart(item) {
       var itemToRemove = cart[i];
     }
   }
-  if (itemToRemove.itemName === item) {
+  if (item === itemToRemove.itemName) {
     cart.splice(cart.indexOf(itemToRemove), cart.indexOf(itemToRemove));
       return cart;
-  } else {
+  } else if (!itemToRemove) {
     return `There is no item to remove.`
   }
 }
