@@ -54,7 +54,7 @@ function removeFromCart(item) {
   if (itemToRemove.itemName) {
     cart.splice(cart.indexOf(itemToRemove), cart.indexOf(itemToRemove));
       return cart;
-  } else if (!itemToRemove) {
+  } else {
     return `There is no item to remove.`
   }
 }
