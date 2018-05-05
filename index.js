@@ -48,12 +48,14 @@ function total() {
 function removeFromCart(item) {
   for ( let i=0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      let searchResult = cart[i]
+      let itemToRemove = cart[i]
     }
   }
-  if (searchResult) {
-    cart.splice(cart.indexOf(search), i);
+  if (itemToRemove) {
+    cart.splice(cart.indexOf(itemToRemove), cart.indexOf(itemToRemove));
       return cart;
+  } else {
+    return `There is no item to remove.`
   }
 }
 
