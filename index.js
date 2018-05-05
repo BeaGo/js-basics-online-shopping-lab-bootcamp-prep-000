@@ -46,7 +46,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for ()
+  for ( let i=0; i )
 }
 
 function placeOrder(cardNumber) {
