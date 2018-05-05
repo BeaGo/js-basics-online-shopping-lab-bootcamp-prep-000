@@ -51,7 +51,7 @@ function removeFromCart(item) {
       var itemToRemove = cart[i];
     }
   }
-  if (itemToRemove.itemName) {
+  if (itemToRemove) {
     cart.splice(cart.indexOf(itemToRemove), cart.indexOf(itemToRemove));
       return cart;
   } else {
