@@ -59,6 +59,7 @@ addToCart("watermelon");
 addToCart("yams");
 console.log(cart[1].itemName)
 console.log(cart.splice(1, 2))
+console.log(cart)
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
