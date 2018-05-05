@@ -48,7 +48,7 @@ function total() {
 function removeFromCart(item) {
   for ( let i=0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      cart.splice(cart[i], cart[i+1]);
+      cart.splice(i, i+1);
       return cart;
     } 
   }
@@ -58,8 +58,7 @@ addToCart("vanilla");
 addToCart("watermelon");
 addToCart("yams");
 console.log(cart[1].itemName)
-removeFromCart("watermelon")
-console.log(cart)
+console.log(cart.splice(1, 2))
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
