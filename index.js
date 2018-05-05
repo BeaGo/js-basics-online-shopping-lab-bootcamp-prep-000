@@ -54,6 +54,9 @@ function removeFromCart(item) {
   }
 }
 
+addToCart("vanilla");
+addToCart("watermelon");
+addToCart("yams");
 removeFromCart
 
 function placeOrder(cardNumber) {
