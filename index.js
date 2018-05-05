@@ -48,18 +48,12 @@ function total() {
 function removeFromCart(item) {
   for ( let i=0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      cart.splice(i, i+1);
+      cart.splice(i, i);
       return cart;
     } 
   }
 }
 
-addToCart("vanilla");
-addToCart("watermelon");
-addToCart("yams");
-console.log(cart[1].itemName)
-console.log(cart.splice(1, 1))
-console.log(cart)
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
