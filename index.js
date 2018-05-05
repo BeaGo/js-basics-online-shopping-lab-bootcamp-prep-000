@@ -57,7 +57,7 @@ function removeFromCart(item) {
 addToCart("vanilla");
 addToCart("watermelon");
 addToCart("yams");
-console.log(cart[0].itemName)
+console.log(cart[1].itemName)
 removeFromCart("watermelon")
 console.log(cart)
 
