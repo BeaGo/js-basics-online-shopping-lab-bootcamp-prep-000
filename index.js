@@ -50,7 +50,7 @@ function removeFromCart(item) {
     if (item === cart[i].itemName) {
       cart.splice(i, i);
       return cart;
-    } 
+    }
   }
 }
 
