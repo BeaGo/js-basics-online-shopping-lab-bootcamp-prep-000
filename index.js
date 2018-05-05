@@ -59,9 +59,6 @@ function removeFromCart(item) {
   }
 }
 
-/* cart.splice(i, i);
-      return cart; */
-
 
 function placeOrder(cardNumber) {
   if (cardNumber) {
