@@ -48,11 +48,17 @@ function total() {
 function removeFromCart(item) {
   for ( let i=0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
-      cart.splice(i, i);
-      return cart;
+      let searchResult = cart[i]
     }
   }
+  if (searchResult) {
+    cart.splice(i, i);
+      return cart;
+  }
 }
+
+/* cart.splice(i, i);
+      return cart; */
 
 
 function placeOrder(cardNumber) {
