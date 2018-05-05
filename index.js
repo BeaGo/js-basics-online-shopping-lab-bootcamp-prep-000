@@ -55,7 +55,7 @@ function removeFromCart(item) {
     cart.splice(cart.indexOf(itemToRemove), cart.indexOf(itemToRemove));
       return cart;
   } else {
-    return `There is no item to remove.`
+    return `That item is not in your cart.`
   }
 }
 
