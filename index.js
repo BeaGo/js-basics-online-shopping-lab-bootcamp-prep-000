@@ -1,4 +1,4 @@
-var cart = [];
+var cart = ['fart'];
 
 function getCart() {
  return cart;
@@ -46,6 +46,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+
 }
 
 function placeOrder(cardNumber) {
